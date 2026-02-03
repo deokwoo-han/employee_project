@@ -30,11 +30,19 @@ interface EmpState {
     loading: boolean,
 }
 
+const initialData: Employee[] = [
+  {id: "1", name: 'John', age: 35, job: "frontend", language: "react", pay: 1},
+  {id: "2", name: 'Peter', age: 35, job: "backend", language: "python", pay: 1},
+  {id: "3", name: 'Sue', age: 35, job: "frontend", language: "javascript", pay: 1},
+  {id: "4", name: 'Susan', age: 35, job: "backend", language: "java", pay: 1},
+]
+
+
 const initialState: EmpState = {
     mode: "",
     selectedId: "",
     upInfo: tempEmp,
-    infos: [],
+    infos: initialData,
     error: null,
     loading: false,
 }
